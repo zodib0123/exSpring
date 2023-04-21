@@ -1,0 +1,36 @@
+{{>layout/up_header}}
+<h1>내용을 수정해 주세요.</h1>
+{{#list}}
+<form action="result/{{Id}}" method="post">
+    <div>
+        <label for="userId">ID : </label>
+        <input id="userId" name="userId" value="{{userId}}" type="text">
+    </div>
+    <div>
+        <label for="userName">Name : </label>
+        <input id="userName" name="userName" value="{{userName}}" type="text">
+    </div>
+    <div>
+        <label for="password">PW : </label>
+        <input id="password" name="password" type="password">
+    </div>
+    <div>
+        <label for="birth">ID : </label>
+        <input id="birth" name="birth" value="{{birth}}" type="date">
+    </div>
+    <div>
+        <label for="gender">ID : </label>
+        <select id="gender" name="gender" value="{{gender}}">
+            <option value="남">남자</option>
+            <option value="여">여자</option>
+        </select>
+    </div>
+    <div>
+        <label for="address">ID : </label>
+        <input id="address" name="address" value="{{address}}" type="text">
+    </div>
+    <input type="hidden" name="_method" value="PUT">
+    <input type="submit" value="계정 수정">
+</form>
+{{/list}}
+{{>layout/footer}}

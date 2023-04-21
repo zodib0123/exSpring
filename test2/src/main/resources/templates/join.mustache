@@ -1,0 +1,12 @@
+{{>layout/up_header}}
+<h1>여기는 계정 수정 Page 입니다.</h1>
+<h1>먼저 로그인 해주세요.</h1>
+<form action="update" method="get">
+    <div>
+        <label for="userId">ID : </label>
+        <input id="userId" name="userId" type="text">
+    </div>
+    <input type="submit" value="Info 검색">
+</form>
+<p>{{error}}</p>
+{{>layout/footer}}

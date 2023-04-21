@@ -1,0 +1,38 @@
+{{>layout/user_header}}
+
+<h1>여기는 Home Page 입니다.</h1>
+<h2><a href="/">Index Page 로 이동</a></h2>
+
+<h1>새로운 User를 생성할 수 있습니다.</h1>
+<form action="result" method="post">
+    <div>
+        <label for="userId">ID : </label>
+        <input id="userId" name="userId" type="text">
+    </div>
+    <div>
+        <label for="userName">닉네임 : </label>
+        <input id="userName" name="userName" type="text">
+    </div>
+    <div>
+        <label for="password">PW : </label>
+        <input id="password" name="password" type="password">
+    </div>
+    <div>
+        <label for="birth">생년월일 : </label>
+        <input id="birth" name="birth" type="date">
+    </div>
+    <div>
+        <label for="gender">성별 : </label>
+        <select id="gender" name="gender">
+            <option value="남">남자</option>
+            <option value="여">여자</option>
+        </select>
+    </div>
+    <div>
+        <label for="address">주소 : </label>
+        <input id="address" name="address" type="text">
+    </div>
+    <input type="submit" value="User 생성">
+</form>
+<p>{{error}}</p>
+{{>layout/footer}}

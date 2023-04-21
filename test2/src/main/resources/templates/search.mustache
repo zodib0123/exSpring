@@ -1,0 +1,15 @@
+{{>layout/header}}
+<h1>불러오기 {{result}}!</h1>
+{{#list}}
+    <p>ID : {{userId}}</p>
+    <p>Name : {{userName}}</p>
+    <p>Birth : {{birth}}</p>
+    <p>Gender : {{gender}}</p>
+    <p>Address : {{address}}</p>
+    <p>Point : {{point}}</p>
+    <p>Coin : {{coin}}</p>
+{{/list}}
+
+<h2><a href="/">Index Page 로 이동</a></h2>
+<h2><a href="/home">Home Page 로 이동</a></h2>
+{{>layout/footer}}
